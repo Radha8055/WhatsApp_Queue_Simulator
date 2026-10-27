@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>WhatsApp Queue Simulator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <h2>WhatsApp Queue Simulator</h2>
+
+        <input type="text" id="currentUser" placeholder="Your Name">
+
+        <input type="text" id="receiver" placeholder="Receiver Name">
+
+        <div id="chatBox"></div>
+
+        <input type="text" id="messageInput" placeholder="Type message">
+
+        <div class="button-area">
+
+            <button type="button" onclick="sendMessage()">
+                Send
+            </button>
+
+            <button type="button" onclick="loadMessages()">
+                Refresh
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}?v=10"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #d9dbd5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   CHAT CONTAINER
+   ============================== */
+
+.chat-container {
+    width: 430px;
+    height: 650px;
+
+    background: #efe7dd;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+h2 {
+    margin: 0;
+    padding: 18px;
+
+    background: #075e54;
+    color: white;
+
+    text-align: center;
+
+    font-size: 21px;
+}
+
+
+/* ==============================
+   USER INPUTS
+   ============================== */
+
+#currentUser,
+#receiver {
+
+    margin: 8px 12px;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+#currentUser:focus,
+#receiver:focus {
+
+    border-color: #075e54;
+}
+
+
+/* ==============================
+   CHAT BOX
+   ============================== */
+
+#chatBox {
+
+    flex: 1;
+
+    padding: 10px;
+
+    overflow-y: auto;
+
+    background:
+        #efe7dd;
+}
+
+
+/* ==============================
+   MESSAGE
+   ============================== */
+
+.message {
+
+    max-width: 75%;
+
+    padding: 9px 10px;
+
+    margin: 7px 0;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    word-wrap: break-word;
+
+    position: relative;
+}
+
+
+/* SENT MESSAGE */
+
+.message.sent {
+
+    margin-left: auto;
+
+    background: #dcf8c6;
+
+    border-top-right-radius: 2px;
+}
+
+
+/* RECEIVED MESSAGE */
+
+.message.received {
+
+    margin-right: auto;
+
+    background: white;
+
+    border-top-left-radius: 2px;
+}
+
+
+/* ==============================
+   MESSAGE TEXT
+   ============================== */
+
+.message-text {
+
+    display: inline;
+}
+
+
+/* ==============================
+   MESSAGE STATUS
+   ============================== */
+
+.message-status {
+
+    margin-left: 7px;
+
+    font-size: 13px;
+
+    color: #777;
+
+    font-weight: normal;
+}
+
+
+/* ==============================
+   BLUE READ TICK
+   ============================== */
+
+.message-status.read {
+
+    color: #2196f3 !important;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   MESSAGE INPUT
+   ============================== */
+
+#messageInput {
+
+    margin: 8px 12px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 20px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+#messageInput:focus {
+
+    border-color: #075e54;
+}
+
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.button-area {
+
+    display: flex;
+
+    gap: 8px;
+
+    padding: 8px 12px 12px;
+}
+
+
+button {
+
+    flex: 1;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #075e54;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+
+    background: #064e46;
+}
+
+
+button:active {
+
+    transform: scale(0.98);
+}
